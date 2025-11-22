@@ -64,18 +64,6 @@ ul li a.active {
   color: var(--primary-color);
 }
 
-/* Remove mobile sticky focus/active underline */
-ul li a:focus::after,
-ul li a:active::after {
-  width: 0 !important;
-}
-
-ul li a:focus,
-ul li a:active {
-  color: var(--text-dark) !important; /* reset color too */
-}
-
-
 /* -------------- 5. Responsive Navbar -------------- */
 @media (max-width: 768px) {
   header .container {
