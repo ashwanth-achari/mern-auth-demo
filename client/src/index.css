@@ -1,0 +1,108 @@
+/* -------------- 1. Reset -------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------- 2. Typography -------------- */
+html {
+  font-size: 67.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Urbanist", system-ui, Avenir, Arial, Helvetica, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* -------------- 3. Theme Variables --------------  */
+:root {
+--primary-color: #111827;      
+  --primary-hover: #1f2937;      
+  --text-dark: #111827;          
+  --text-light: #4b5563;         
+  --bg-light:#f9fafb;           
+  --white: #ffffff;               
+  --border-color: #e5e7eb;  
+  --radius: 0.6rem;
+  --transition: all 0.3s ease-in-out;
+}
+
+/* -------------- 4. Common Elements -------------- */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--primary-hover);
+}
+
+p,
+input,
+textarea,
+button,
+li {
+  font-size: 2rem;
+  letter-spacing: 0.04rem;
+}
+
+li {
+  list-style: none;
+}
+
+/* -------------- 5. Reusable Layout Classes -------------- */
+.container {
+  max-width: 120rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* -------------- 6. Buttons -------------- */
+.btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  background-color: var(--primary-hover);
+}
+
+/* -------------- 7. Scrollbar & Selection (optional polish) -------------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+::selection {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+/* -------------- 8. react-toastify css -------------- */
+
+.toastBody {
+  font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem ;
+}

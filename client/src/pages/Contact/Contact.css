@@ -1,0 +1,142 @@
+.section-contact {
+  background-color: var(--bg-light);
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto auto;
+  gap: 3.5rem;
+}
+.contact-image {
+  display: none;
+}
+
+.contact-form {
+  padding: 3rem 3rem;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contact-main-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 1.6rem;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+/* --- Responsive Design --- */
+@media (min-width: 768px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    max-width: 1200px; 
+    margin: 0 auto;
+    gap: 3rem;
+  }
+
+  .contact-image {
+    display: block;
+    flex: 1;
+    order: 0;
+    width: 90%;
+    height: 90%;
+    overflow: hidden; 
+  }
+
+  .contact-image img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .contact-main-heading {
+    max-width: 1200px;
+    text-align: left;
+    margin: 1rem auto;
+    margin-left: 3rem;
+  }
+
+  .contact-form {
+    flex: 1;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form {
+    gap: 2rem;
+  }
+}

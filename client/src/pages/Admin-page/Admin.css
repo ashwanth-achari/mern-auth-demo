@@ -1,0 +1,455 @@
+.section-admin {
+  padding: 2rem 0;
+  background: var(--bg-light);
+}
+
+.admin-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.update-main-heading {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* ---------- Table Wrapper ---------- */
+
+.admin-user {
+  margin-top: 2rem;
+  overflow-x: auto; /* Allows scroll on small screens */
+}
+.checkBox-label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+/* Admin Table */
+.admin-user table {
+  width: 90%;
+  min-width: 500px; /* Prevents columns from crushing too much */
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.admin-user thead {
+  background: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+}
+
+.admin-user thead th {
+  padding: 0.8rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.admin-user tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.admin-user tbody td {
+  padding: 0.7rem 0.9rem;
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.admin-btn {
+  padding: 0.6rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  margin: 0.5rem auto;
+}
+.edit-link {
+  padding: 0.46rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  color: var(--text-dark);
+  border: 2px solid var(--text-dark);
+}
+
+.edit-link:hover {
+  background-color: var(--text-dark);
+  color: var(--white);
+}
+.delete-btn {
+  background-color: transparent;
+  color: #dc2626;
+  border: 2px solid #dc2626;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+  color: var(--white);
+}
+
+/* delete pop up style */
+
+.pop-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  border-radius: 13px;
+  border: 2px solid var(--primary-color);
+}
+.pop-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.pop-msg {
+  font-size: 1.3rem;
+}
+.pop-btn-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pop-cancel-btn {
+  font-size: 1rem;
+  padding: 9px 18px;
+  background-color: #ccc;
+  color: #000;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 0.6rem 1rem;
+}
+.pop-cancel-btn:hover {
+  background-color: #ccc;
+}
+
+.pop-dlt-btn {
+  font-size: 1rem;
+  padding: 9px 18px;
+  background-color: crimson;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 0.6rem 1rem;
+}
+.pop-dlt-btn:hover {
+  background-color: crimson;
+  color: var(--bg-light);
+}
+
+@media (min-width: 768px) {
+  .pop-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .pop-btn-container {
+    margin-top: 2rem;
+  }
+
+  .pop-btn-container {
+    margin-top: 2rem;
+  }
+  .pop-cancel-btn {
+    font-size: 1.2rem;
+    padding: 13px 18px;
+    background-color: #ccc;
+    color: #000;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-right: 1.5rem;
+  }
+  .pop-cancel-btn:hover {
+    background-color: #ccc;
+  }
+
+  .pop-dlt-btn {
+    font-size: 1.2rem;
+    padding: 13px 18px;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-left: 1.5rem;
+  }
+  .pop-dlt-btn:hover {
+    background-color: crimson;
+    color: var(--bg-light);
+  }
+}
+/* ---------- Responsive Design (Tablets and Up) ---------- */
+
+@media (min-width: 768px) {
+  section {
+    padding: 2.5rem 0;
+  }
+
+  .update-main-heading {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .admin-user {
+    margin-top: 2.5rem;
+  }
+
+  .admin-user table {
+    width: 100%;
+    min-width: 600px;
+  }
+  .checkBox-label {
+    font-size: 1.5rem;
+  }
+  .admin-user thead th {
+    padding: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .admin-user tbody td {
+    font-size: 1.5rem;
+  }
+  .admin-btn {
+    padding: 0.6rem 1.6rem;
+    font-size: 1.4rem;
+  }
+  .edit-link {
+    padding: 0.5rem 2.6rem;
+    font-size: 1.4rem;
+  }
+  .switch-toggle {
+    margin-left: 2rem;
+  }
+}
+
+/* ---------- Larger Screens (Desktops) ---------- */
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .update-main-heading {
+    font-size: 1.4rem;
+  }
+
+  .admin-user table {
+    width: 100%;
+  }
+}
+
+/* Admin user update css codes */
+.admin-form {
+  padding: 3rem 3rem;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.admin-checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+/* toggle check box */
+.switch-toggle {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+}
+
+.switch-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #d1d5db;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+}
+
+.switch-toggle input:checked + .slider {
+  background-color: rgb(245, 91, 91);
+}
+
+.switch-toggle input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+/* new admin panel layout */
+
+/* Entire admin panel */
+.admin-panel-layout {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: var(--bg-light);
+  position: relative;
+}
+
+.apl-sidebar {
+  width: 100%;
+  background: #dadfe4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: var(--transition);
+  z-index: 1000;
+}
+.apl-logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.apl-nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.apl-link {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #000;
+  padding: 6px 19px;
+  border: 1px solid #000;
+  /* border-radius: var(--radius); */
+  border-radius: 25px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.apl-link:hover {
+  background: var(--primary-hover);
+  color: var(--white);
+}
+
+.apl-link.active {
+  background: var(--primary-hover);
+  color: var(--white);
+}
+
+.apl-main {
+  padding-top: 1.6rem;
+  flex: 1;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .admin-panel-layout {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background: var(--bg-light);
+    position: relative;
+  }
+
+  /* Sidebar */
+  .apl-sidebar {
+    width: 240px;
+    background: #dadfe4;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 12px;
+    transition: var(--transition);
+    z-index: 1000;
+  }
+
+  /* Logo */
+  .apl-logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+  }
+
+  /* Navigation */
+  .apl-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  /* Links */
+  .apl-link {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #000;
+    height: 42px;
+    width: 140px;
+    /* border-radius: var(--radius); */
+    border: 1px solid #000;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+
+  /* Main content */
+  .apl-main {
+    flex: 1;
+    padding: 24px;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    overflow-y: auto;
+  }
+}

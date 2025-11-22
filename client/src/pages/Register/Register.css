@@ -1,0 +1,128 @@
+.section-registration {
+  background-color: var(--bg-light);
+}
+.registration-container{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto auto;
+  gap: 3.5rem;
+}
+.registration-image{
+  display: none;
+}
+
+.registration-form {
+  padding: 3rem 3rem;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 1.6rem;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+/* --- Responsive Design --- */
+@media (min-width: 768px) {
+
+  .registration-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; 
+    justify-content: center;
+    margin:1rem auto;
+    gap: 3rem;
+  }
+
+  .registration-image {
+    display: block;
+    flex: 1; 
+    order: 0;
+  }
+
+  .registration-image img {
+    width: 90%;
+    height: 90%; 
+    object-fit: cover; 
+    border-radius: 0.5rem;
+  }
+
+  .registration-form {
+    flex: 1; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  label {
+  font-size: 1.5rem;
+}
+
+  .main-heading {
+    text-align: center;
+    font-size: 2.6rem;
+  }
+
+  form {
+    gap: 2rem;
+  }
+}
