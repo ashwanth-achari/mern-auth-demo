@@ -11,6 +11,7 @@ export const AuthProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   const API = import.meta.env.VITE_API_URL;
+  
   const authorizationToken = token ? `Bearer ${token}` : "";
 
   // Store token in LocalStorage
