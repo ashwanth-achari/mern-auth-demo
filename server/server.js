@@ -36,7 +36,7 @@ app.get("/register", (req, res) => {
 //Error handler (must be after routes)
 app.use(errorMiddleware)
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
 //DB connection + server starting
 connectDB()
