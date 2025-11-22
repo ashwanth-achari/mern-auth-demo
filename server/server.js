@@ -42,7 +42,7 @@ app.use("/api/admin",adminRoute);
 
 //test route
 app.get("/register", (req, res) => {
-  res.status(200).send("Welcome to Home Page");
+  res.status(200).send("Welcome to Home Page -DEPLOY TEST");
 });
 
 //Error handler (must be after routes)
