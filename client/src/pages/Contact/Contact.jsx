@@ -73,7 +73,7 @@ function Contact() {
           ...prev,
           message: "",
         }));
-        console.log("contact res data", contactData);
+        //console.log("contact res data", contactData);
         toast.success("Message sent successfully");
       } else {
         toast.error(
@@ -83,7 +83,7 @@ function Contact() {
         );
       }
     } catch (error) {
-      console.log("error from contact", error);
+      //console.log("error from contact", error);
       toast.error("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);

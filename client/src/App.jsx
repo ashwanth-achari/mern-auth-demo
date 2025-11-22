@@ -30,8 +30,8 @@ const App = () => {
 
 useEffect(() => {
   AOS.init({
-    duration: 800,      // animation duration in ms
-    once: true,         // animate only once when scrolled into view
+    duration: 800,     
+    once: true,         
   });
 }, []);
 

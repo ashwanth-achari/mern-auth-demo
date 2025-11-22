@@ -35,7 +35,7 @@ const AdminUserUpadate = () => {
 
       const response = await fetch(URL, options);
       const resData = await response.json();
-      console.log(`user single data,${resData}`);
+      //console.log(`user single data,${resData}`);
 
       if (response.ok) {
         setData(resData.user || { username: "", email: "", phone: "" });
@@ -45,7 +45,7 @@ const AdminUserUpadate = () => {
         );
       }
     } catch (error) {
-      console.log("Error fetching single user:", error);
+      //console.log("Error fetching single user:", error);
       toast.error("Something went wrong while loading user.");
     } finally {
       setIsFetching(false);
@@ -92,7 +92,7 @@ const AdminUserUpadate = () => {
 
       const response = await fetch(URL, options);
       const resData = await response.json();
-      console.log("update user ", response);
+      //console.log("update user ", response);
 
       if (response.ok) {
         toast.success("User updated successfully");
@@ -102,7 +102,7 @@ const AdminUserUpadate = () => {
         );
       }
     } catch (error) {
-      console.log("Error updating user:", error);
+      //console.log("Error updating user:", error);
       toast.error("Something went wrong while updating user.");
     } finally {
       setIsSubmitting(false);

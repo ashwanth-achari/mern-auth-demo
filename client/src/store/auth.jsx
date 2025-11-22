@@ -52,7 +52,7 @@ export const AuthProvider = ({ children }) => {
         },
       };
       const response = await fetch(URL, options);
-      console.log(response);
+      //console.log(response);
 
       if (!response.ok) {
         // Token invalid / expired – clean up
@@ -63,10 +63,10 @@ export const AuthProvider = ({ children }) => {
 
       const data = await response.json();
       setUser(data.userData || null);
-      console.log(`loggedIn user data ${data.userData}`);
+      //console.log(`loggedIn user data ${data.userData}`);
       setIsLoading(false);
     } catch (error) {
-      console.log("User authentication:", error);
+      //console.log("User authentication:", error);
       setIsLoading(false);
     }
   };
@@ -80,12 +80,12 @@ export const AuthProvider = ({ children }) => {
       if (response.ok) {
         const data = await response.json();
         setServices(data.servicesData || []);
-        // console.log(data.msg);
+        // //console.log(data.msg);
       } else {
         setServices([]);
       }
     } catch (error) {
-      console.log("Service page:", error);
+      //console.log("Service page:", error);
       setServices([]);
     }
   };

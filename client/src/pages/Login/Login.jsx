@@ -43,7 +43,7 @@ function Login() {
 
       const response = await fetch(URL, options);
       const res_Data = await response.json();
-      console.log("response data from login ", res_Data);
+      //console.log("response data from login ", res_Data);
 
       if (response.ok) {
         storeTokenInLS(res_Data.token);
@@ -56,7 +56,7 @@ function Login() {
         );
       }
     } catch (error) {
-      console.log("login", error);
+      //console.log("login", error);
       toast.error("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);

@@ -30,7 +30,7 @@ const AdminUsers = () => {
       const response = await fetch(URL, options);
       const data = await response.json();
 
-      // console.log(data.users);
+      //console.log(data.users);
       if (response.ok) {
         setUsers(data.users || []);
       } else {
@@ -40,7 +40,7 @@ const AdminUsers = () => {
         setUsers([]);
       }
     } catch (error) {
-      console.log("Error fetching users:", error);
+      //console.log("Error fetching users:", error);
       toast.error("Something went wrong while loading users.");
       setUsers([]);
     } finally {
@@ -73,7 +73,7 @@ const AdminUsers = () => {
         );
       }
     } catch (error) {
-      console.log("Error deleting user:", error);
+      //console.log("Error deleting user:", error);
       toast.error("Something went wrong while deleting user.");
     } finally {
       setDeletingId(null);

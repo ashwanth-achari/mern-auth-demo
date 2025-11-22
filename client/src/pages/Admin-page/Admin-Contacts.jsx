@@ -39,7 +39,7 @@ const AdminContacts = () => {
         setContacts([]);
       }
     } catch (error) {
-      console.log("Error fetching contacts:", error);
+      //console.log("Error fetching contacts:", error);
       toast.error("Something went wrong while loading contacts.");
       setContacts([]);
     } finally {
@@ -71,7 +71,7 @@ const AdminContacts = () => {
         );
       }
     } catch (error) {
-      console.log("Error deleting contact:", error);
+     // console.log("Error deleting contact:", error);
       toast.error("Something went wrong while deleting contact.");
     } finally {
       setDeletingId(null);

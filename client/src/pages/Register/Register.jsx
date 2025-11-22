@@ -43,7 +43,7 @@ function Register() {
 
       const response = await fetch(URL, options);
       const res_Data = await response.json();
-      console.log("data from register response:", res_Data);
+      //console.log("data from register response:", res_Data);
 
       if (response.ok) {
         storeTokenInLS(res_Data.token);
@@ -55,9 +55,9 @@ function Register() {
           res_Data.extraDetails ? res_Data.extraDetails : res_Data.message
         );
       }
-      console.log(response);
+      //console.log(response);
     } catch (error) {
-      console.log("register", error);
+      //console.log("register", error);
       toast.error("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
