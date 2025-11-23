@@ -1,5 +1,5 @@
 # 🚀 DevAsh Services Portal  
-A modern Full-stack MERN platform with authentication, admin dashboard, and service management.
+A modern Full-stack MERN platform with authentication, admin dashboard.
 
 Live Demo:  
 👉 **Frontend:** https://devash-services.vercel.app  
@@ -141,4 +141,17 @@ root/
 | POST | `/api/form/contact` | Submit contact form |
 
 ---
+## 🚀 Local Development
+
+### **1. Clone the repository**
+```bash
+git clone <https://github.com/ashwanth-achari/mern-auth-demo.git>
+cd project-folder
+
+cd backend
+npm install
+
+cd client
+npm install
+npm run dev
 
